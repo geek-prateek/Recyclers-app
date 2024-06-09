@@ -1,0 +1,18 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="success">
+    <ion-title>Register</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>What do you want to do with the recyclable waste?</ion-card-title>
+    </ion-card-header>
+    <ion-radio-group [compareWith]="compareWith" (ionChange)="handleChange($event)">
+      <ion-item *ngFor="let data of registerData; trackBy: trackItems">
+        <ion-radio [value]="data">{{data.name}}</ion-radio>
+      </ion-item>
+    </ion-radio-group>
+  </ion-card>
+</ion-content>
