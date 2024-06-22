@@ -18,6 +18,10 @@ const routes: Routes = [
   {
     path: 'register',
     loadChildren: () => import('./pages/register/register.module').then( m => m.RegisterPageModule)
+  },
+  {
+    path: 'swiper',
+    loadChildren: () => import('./pages/swiper/swiper.module').then( m => m.SwiperPageModule)
   }
 ];
 

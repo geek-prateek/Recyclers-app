@@ -1,0 +1,14 @@
+<ion-content [fullscreen]="true">
+  <div id="container">
+    <swiper-container
+    [pagination]="{type: 'bullets', clickable: true}"
+    navigation="true"
+    >
+    <swiper-slide *ngFor="let img of swiper_images">
+      <div class="swiper-zoom-container">
+        <img [src]="img">
+      </div>
+    </swiper-slide>
+  </swiper-container>
+  </div>
+</ion-content>
